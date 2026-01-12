@@ -1,0 +1,419 @@
+ body{
+  font-family: 'Poppins', sans-serif !important;
+  background-color: #fff0f5 !important;
+ }
+ .product-section {
+    background-color: #fff0f5 !important;
+    padding: 30px;
+  }
+  .product-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 5px solid #E06391;
+    margin-bottom: 5%;
+    font-size: 1.5rem;
+  }
+  .product-title {
+    font-family: 'Leckerli One', cursive;
+    color: #8F395D;
+    font-size: clamp(2rem, 3vw, 3.5rem);
+  }
+  .related-products img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+.title {
+    font-family: 'Leckerli One', cursive;
+    color: #8F395D;
+    /*font-size: 3.5rem !important;*/
+}
+
+.price {
+    color: #D13A79;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: bold;
+    margin-bottom: -3px;
+}
+
+.desc span {
+    color: #CB3473;
+    font-weight: bold;
+}
+
+.desc2 {
+    color: #CB3473;
+    font-weight: bold;
+}
+
+.form-control, .form-select {
+    border: 2px solid #FF96C4;
+    border-radius: 5px !important;
+}
+
+/*.btn-primary {*/
+/*    background-color: #D13A79 !important;*/
+/*    border: none !important;*/
+/*    font-weight: bold;*/
+/*    color: white !important;*/
+/*    transition: background-color 0.3s ease-in-out;*/
+/*}*/
+
+/*.btn-primary:hover {*/
+/*    background-color: #8F395D !important;*/
+/*}*/
+
+.form-control:focus, 
+.form-select:focus {
+    outline: none !important;
+    box-shadow: 0 0 5px rgba(209, 58, 121, 0.5) !important;
+    border-color: #D13A79 !important;
+}
+
+.rating {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    margin-bottom: 10px;
+    
+}
+
+.bi-star {
+    color: #FCD53F;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4),
+        0px 0px 4px rgba(255, 224, 115, 0.8);
+}
+
+.bi-star-fill {
+    color: #FCD53F;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), 
+                 0px 0px 8px rgba(255, 224, 115, 0.6);
+}
+
+.cake-card {
+    background-color: #ffe7e7;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; 
+    margin: 10px 0; 
+}
+
+.cake-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.cake-card-icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cake-card-icons .btn-icon {
+    background-color: #ff87a0;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+}
+
+.cake-card-icons .btn-icon:hover {
+    background-color: #ff6389;
+}
+
+.btn-icon {
+    background-color: #ff87a0;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .btn-icon:hover {
+    background-color: #CB3473;
+    color: white;
+  }
+  
+
+
+.btn-icon.favorite-btn {
+  background-color: #ff87a0;
+  color: white; 
+  border: 1px solid #ff87a0; 
+  border-radius: 50%; 
+  padding: 5px; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+
+.btn-icon.favorite-btn.favorited {
+  background-color: #D13A79; 
+  border: 1px solid #D13A79; 
+  color: white; 
+}
+
+
+.btn-icon.favorite-btn:hover {
+  background-color: #FD3F73; 
+  color: white; 
+}
+
+
+.main-content {
+  /*padding-bottom: 250px;*/
+  
+}
+
+
+.add-to-cart-btn {
+  background-color: #F16FA8; 
+  color: #fff; 
+  padding: 0.5rem 1.5rem; 
+  text-decoration: none; 
+  border-radius: 0.5rem; 
+  display: inline-block; 
+  border: none; 
+  transition: background-color 0.2s ease, transform 0.2s ease; 
+}
+
+.add-to-cart-btn:hover {
+  background-color: #D13A79; 
+  color: #fff;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+.buy-now-btn {
+    background-color: #CB3473 !important; /* Custom background color */
+  color: #fff !important; 
+  padding: 0.5rem 1.5rem; /* Optional padding */
+  text-decoration: none; /* Remove underline */
+  border-radius: 0.5rem; /* Rounded corners */
+  display: inline-block; /* Ensures padding applies correctly */
+  border: none; /* No border */
+  transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth transitions */
+ 
+}
+
+.buy-now-btn:hover {
+  background-color: #A62E5B; /* Darker shade on hover */
+  color: #fff; /* Keep text white */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+
+.breadcrumb-nav {
+  color: #CB3473; /* Set color for the entire breadcrumb */
+}
+
+.breadcrumb-link {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline */
+}
+
+.breadcrumb-link:hover {
+  color: #A62E5B; /* Optional: darker shade on hover */
+  text-decoration: none; /* Keep text decoration removed on hover */
+}
+
+
+
+
+
+#related-cakes {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    padding: 1rem; 
+    gap: 1rem; 
+    scroll-snap-type: x mandatory; 
+    position: relative; 
+    justify-content: flex-start;
+}
+
+/* Hide horizontal scrollbar */
+#related-cakes::-webkit-scrollbar {
+    display: none; /* For Webkit-based browsers (Chrome, Safari) */
+}
+
+/* For Firefox */
+#related-cakes {
+    scrollbar-width: none; /* Hides the scrollbar in Firefox */
+}
+
+#related-cakes .cake-card-container-wrapper {
+    display: flex;
+    gap: 1rem;
+    transform: translateX(0); 
+    transition: transform 0.3s ease; 
+    scroll-snap-type: x mandatory;
+}
+
+
+.cake-card-container {
+    flex: 0 0 auto;  
+    width: 22%;
+    box-sizing: border-box;
+    scroll-snap-align: center;
+    
+}
+
+
+.prod-cake-card {
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    min-height: 450px;
+}
+
+.prod-cake-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+#related-cakes.centered {
+    justify-content: center;
+}
+
+#prod-cake-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.prod-cake-name-wrapper {
+    /*padding: 1rem;*/
+}
+
+.prod-cake-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #8F395D;
+    text-align: center;
+    margin: 0;
+}
+
+
+.prod-cake-price {
+    font-size: 1.2rem;
+    color: #D13A79;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.stars {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #ffcc00;
+}
+
+.stars i {
+    margin: 0 2px;
+}
+
+@media (max-width: 1200px) {
+    .cake-card-container {
+        width: 30%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .cake-card-container {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cake-card-container {
+        width: 100%; 
+    }
+}
+
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.pagination-dots button {
+    width: 12px;
+    height: 12px;
+    background-color: #d13a79;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-dots button.active {
+    background-color: rgba(209, 58, 121, 0.7);
+}
+
+
+#reviews-container {
+  max-height: 400px; /* Set a fixed height for the container */
+  overflow-y: auto;  /* Enable scrolling */
+}
+
+.text-warning {
+  color: #ffc107 !important; /* Ensure yellow color is applied */
+}
+
+.star-rating {
+  font-size: 24px; /* Adjust size of stars */
+}
+
+
+.customer-reviews h3 {
+    font-family: 'Cursive', sans-serif;
+    color: #000;
+  }
+  
+  .rating-stars {
+    text-align: left; /* Align stars and text to the left */
+  }
+  
+  .rating-stars span {
+    font-size: 1.5rem;
+    color: #FFD700; /* Gold color for stars */
+  }
+  
+  .rating-stars p {
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    color: #6c757d; /* Muted gray for "Based on 1 review" */
+  }
+  
+  .review-card {
+    border: 1px solid #f7c8d4;
+    background-color: #fff;
+  }
+  
+  .review-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .user-avatar img {
+    border: 2px solid #f7c8d4;
+  }
+  
+
+
+

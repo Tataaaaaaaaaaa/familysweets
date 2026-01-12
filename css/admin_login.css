@@ -1,0 +1,168 @@
+.logo {
+    width: 150px; 
+}
+
+body {
+    background-color: #F7D5E1;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('/css/designs/wave-bg3.png');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10vw; 
+}
+
+.svg-container {
+    position: relative; 
+    width: 40vw; 
+    height: auto;
+    z-index: 0; 
+}
+
+
+.svg-image {
+    width: 100%;
+    height: auto;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%; 
+    z-index: 2;
+    margin-right: 10vw;
+}
+
+h2 {
+    color: #d63384;
+    font-weight: bold;
+}
+
+.form-group label {
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #d63384;
+    padding: 10px 20px;
+}
+
+.form-control:focus {
+    border-color: #d63384;
+    box-shadow: 0 0 5px rgba(214, 51, 132, 0.5);
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 74%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #d63384;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.btn-primary {
+    background-color: #d63384;
+    border-color: #d63384;
+    border-radius: 30px;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    border-color: #c02674;
+    background-color: #c02674;
+}
+
+.btn-primary:active, button.btn-primary:focus {
+    border-color: #c02674 !important;
+    background-color: #c02674 !important;
+    transform: translateY(2px);
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #d63384;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    color: #A62E5B !important;
+    text-decoration: underline;
+}
+
+.create-account a {
+    font-size: 16px;
+    color: #0062cc;
+    text-decoration: none;
+}
+
+.create-account a {
+    color: #d63384;
+}
+
+.create-account a:hover {
+    color: #A62E5B !important;
+    text-decoration: underline;
+}
+
+@media (max-width: 1050px) {
+        
+    .svg-container {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        /*align-items: center;*/
+        /*height: 100vh;*/
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .login-box {
+        margin-top: 0;
+        padding: 40px 30px;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    
+    body {
+        background-size: cover;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 100% !important;
+    }
+}
+
+
+button:active, button:focus {
+            box-shadow: none !important;
+        }
+

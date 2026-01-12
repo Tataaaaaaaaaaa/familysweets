@@ -1,0 +1,572 @@
+#main-content {
+  background-color: #FFF5F5;
+}
+
+.cake-banner {
+background-color: #f7d5e1;
+padding: 50px 0;
+position: relative;
+font-family: 'Poppins', sans-serif;
+}
+
+.image-section img {
+width: 120%;
+max-width: 90%;
+height: auto;
+display: block;
+}
+
+#cake-img-text {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+#cake-img-text h1 {
+  color: #D13A79;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#cake-img-text p {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#cake-img-text a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  background-color: #CB3473;
+  color: white;
+  border-radius: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  padding: 1rem 2rem;
+  display: inline-block; 
+}
+
+#cake-img-text a:hover,  #best-seller-text-holder div p a:hover, #cake-design div a:hover{
+  background-color: #A62E5B;
+  transform: translateY(-4px);
+}
+
+@media (max-width: 1335px) {
+  #cake-img-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 66.66666667%;
+  }
+}
+
+@media (max-width: 1058px) {
+  #cake-img-text {
+      width: 83.33333333%;
+  }
+}
+
+@media (max-width: 676px) {
+  #cake-img-text {
+      width: 100%;
+  }
+}
+
+#cake-img {
+  position: absolute;
+  right: -10px;
+  bottom: calc(50px - (100vw - 1200px) * 0.3);
+}
+
+#cake-img-div {
+  position: relative;
+  height: calc(300px - (100vw - 1200px) * -.5);
+}
+
+@media (max-width: 1555px) {
+  .image-section img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1480px) {
+  #cake-img {
+      bottom: calc(-5px - (100vw - 1200px) * 0.1);
+  }
+}
+
+
+@media (max-width: 1450px) {
+  .image-section img {
+    max-width: 70%;
+  }
+  
+  #cake-img {
+      right: 50px;
+  }
+}
+
+@media (max-width: 1315px) {
+  .image-section img {
+    max-width: 65%;
+  }
+}
+
+@media (max-width: 1130px) {
+  .image-section img {
+    max-width: 65%;
+  }
+}
+
+#best-seller-holder {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
+
+#best-seller-holder-sm {
+  flex: 0 0 auto;
+  width: 0%;
+  display: none;
+}
+
+#best-seller-text-holder {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+}
+
+#best-seller-img, #best-seller-img-sm {
+  max-width: 80%;
+  border-radius: 22px;
+}
+
+#best-seller-text-holder div h1 {
+  font-family: 'Leckerli One', cursive;
+  color: #8F395D;
+}
+
+#best-seller-text-holder div h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #F17373;
+}
+
+#best-seller-text-holder div p a, #cake-design div a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  background-color: #CB3473;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  padding: 15px 38px;
+  display: inline-block; 
+}
+
+#best-seller-product-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: black;
+}
+
+#best-seller-price {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #D13A79;
+}
+
+#best-seller-text {
+  flex: 0 0 auto;
+  width: 66.66666667%;
+}
+
+#best-seller-text p {
+  margin-top: 5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 1602px) {
+  #best-seller-text {
+      width: 75%;
+  }
+}
+
+@media (max-width: 1430px) {
+  #best-seller-text {
+      width: 83.33333333%;
+  }
+}
+
+@media (max-width: 1293px) {
+  #best-seller-text {
+      width: 91.66666667%;
+  }
+}
+
+@media (max-width: 1199px) {
+  #best-seller-text {
+      width: 100%;
+  }
+  
+  #best-seller-text p {
+      margin-top: 3rem;
+  }
+  
+  #best-seller-img, #best-seller-img-sm {
+      max-width: 90%;
+  }
+}
+
+@media (max-width: 932px) {
+  #best-seller-text p {
+      padding-right: 0rem;
+      padding-left: 0rem;
+  }
+  
+  #best-seller-holder {
+      width: 0%;
+      display: none;
+  }
+  
+  #best-seller-text-holder {
+      width: 100%;
+  }
+  
+  #best-seller-text {
+      width: 66.66666667%;
+  }
+  
+  #best-seller-holder-sm {
+      width: 60%;
+      display: flex;
+  }
+}
+
+@media (max-width: 676px) {
+  #best-seller-text {
+      width: 83.33333333%;
+  }
+}
+
+@media (max-width: 500px) {
+  #best-seller-holder-sm {
+      width: 80%;
+  }
+}
+
+@media (max-width: 434px) {
+  #best-seller-text {
+      width: 100%;
+  }
+}
+
+.line-break::before {
+  content: "\A"; 
+  white-space: pre; 
+}
+
+@media (max-width: 331px) {
+.line-break::before {
+  content: ""; 
+}
+}
+
+.fade-cake {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.fade-cake-in {
+  opacity: 1;
+}
+
+.fade-cake-out {
+  opacity: 0;
+}
+
+#cake-categories div h1, #cake-categories div h1 span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+#cake-categories div h1 {
+  color: #8F395D;
+}
+
+#cake-categories div h1 span {
+  color: #F17373;
+}
+
+#cake-categories div div div a img {
+  border-radius: 22px;
+  box-shadow: 0 1px 3px rgba(242, 220, 223, 0.5), 0 1px 2px rgba(242, 220, 223, 0.4);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+#cake-categories div div div a:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 14px 28px rgba(242, 220, 223, 0.6), 0 10px 10px rgba(242, 220, 223, 0.5);
+}
+
+#cake-categories div div div a {
+  text-decoration: none;
+}
+
+#cake-categories div div div a p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: black;
+  transition: all 0.3s ease; 
+}
+
+#cake-categories div div div a:hover p {
+  transform: translateY(5px);
+}
+
+#cake-categories div div div {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+@media (max-width: 991px) {
+  #cake-categories div div div {
+      width: 50%;
+  }
+}
+
+#cake-design {
+  background-color: #FFC3D9;
+}
+
+#cake-design h1 {
+  font-family: 'Leckerli One', cursive;
+  color: #8F395D;
+}
+
+#cake-design h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #CB3473;
+}
+
+#cake-design div div div img {
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(150, 150, 150, 0.2), 0 1px 2px rgba(150, 150, 150, 0.15);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+#cake-design div div div img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(120, 120, 120, 0.25), 0 6px 6px rgba(120, 120, 120, 0.2);
+}
+
+#cake-reviews div h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #8F395D;
+}
+
+.circle-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #8F395D;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circle-icon:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.review-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.review-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #8F395D;
+  border: 5px solid #8F395D;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.review-image {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  box-sizing: border-box !important;
+}
+
+.review-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: black;
+}
+
+.review-text {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  max-width: 700px !important;   
+  width: 100%;        
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 991px) {
+  .review-text {
+      max-width: 400px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .review-text {
+      max-width: 350px !important;
+  }
+}
+
+@media (max-width: 460px) {
+  .review-text {
+      max-width: 250px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .review-text {
+      max-width: 180px !important;
+  }
+}
+
+#quote-2 {
+  margin-left: 10rem !important;
+}
+
+#quote-1 {
+  margin-right: 10rem !important;
+}
+
+@media (max-width: 1399px) {
+  #quote-2 {
+      margin-left: 7.5rem !important;
+  }
+  
+  #quote-1 {
+      margin-right: 7.5rem !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  #quote-2 {
+      margin-left: 1rem !important;
+  }
+  
+  #quote-1 {
+      margin-right: 1rem !important;
+  }
+}
+
+@media (max-width: 991px) {
+  #quote-2 img, #quote-1 img {
+      display: none ;
+  }
+}
+
+.back-to-top {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: #D13A79;
+border: none;
+font-weight: 600;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0px 0px 0px 4px rgba(209, 58, 121, 0.4);
+cursor: pointer;
+transition-duration: 0.3s;
+overflow: hidden;
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 1000;
+opacity: 0;
+}
+
+.back-to-top.visible {
+opacity: 1;
+}
+
+.bi-star {
+    font-size: 20px;
+    margin-right: 5px;
+    color: #FCD53F;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4),
+        0px 0px 4px rgba(255, 224, 115, 0.8);
+}
+
+.bi-star-fill {
+    font-size: 20px;
+    margin-right: 5px;
+    color: #FCD53F;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), 
+                 0px 0px 8px rgba(255, 224, 115, 0.6);
+}
+
+
+.svgIcon {
+width: 12px;
+transition-duration: 0.3s;
+}
+
+.svgIcon path {
+fill: white;
+}
+
+.back-to-top:hover {
+width: 140px;
+border-radius: 50px;
+background-color: #D13A79;
+align-items: center;
+}
+
+.back-to-top:hover .svgIcon {
+transform: translateY(-200%);
+}
+
+.back-to-top::before {
+position: absolute;
+bottom: -20px;
+content: "Back to Top";
+color: white;
+font-size: 0px;
+}
+
+.back-to-top:hover::before {
+font-size: 13px;
+opacity: 1;
+bottom: unset;
+transition-duration: 0.3s;
+}

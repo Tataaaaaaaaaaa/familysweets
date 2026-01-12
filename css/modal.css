@@ -1,0 +1,130 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+#modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  overflow: hidden !important;
+}
+
+#modal-content {
+  /*background-color: white !important;*/
+  /*padding: 30px;*/
+  /*border-radius: 35px !important;*/
+  /*border: 5px solid #D13A79 !important;*/
+  /*width: 50%;*/
+  /*max-width: 450px;*/
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+  /*position: fixed;*/
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*transform: translate(-50%, -50%);*/
+  /*z-index: 1001;*/
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  overflow: hidden !important;
+}
+
+.modal-content {
+  background-color: white !important;
+  padding: 30px;
+  border-radius: 35px !important;
+  border: 5px solid #D13A79 !important;
+  width: 50%;
+  max-width: 450px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+
+
+.modal-content h2 {
+    color: #D13A79;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-content h4 {
+    color: #D13A79;
+    text-align: left;
+    font-weight: bold;
+}
+
+.modal-content p {
+    margin-top: 15px;
+    color: #8F395D;
+    text-align: center;
+}
+
+.modal-content p span {
+    font-weight: bold !important;
+}
+
+.understand-btn {
+  background-color: #CB3473;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.understand-btn:hover {
+  background-color: #8F395D;
+  color: white;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #D13A79;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.close-modal:hover {
+    color: #8F395D;
+}
+
+.buttonModal {
+    appearance: none;
+}
+
+#cartButton {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.heart-container {
+    pointer-events: all; /* Ensure clicks are detected on the container */
+}
+

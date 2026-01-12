@@ -1,0 +1,294 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.iframe-container {
+    /*position: relative;*/
+    /*width: 100vw;*/
+    /*height: calc(100vw * 9 / 16);*/
+    /*padding-top: 56.25%;*/
+    /*overflow: hidden;*/
+    /*box-sizing: border-box;*/
+    
+    position: relative;
+    width: 100vw; 
+    height: calc(100vw * 9 / 16);
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .iframe-container {
+        width: calc(100vh * 16 / 9); 
+        height: 100vh;
+    }
+}
+        
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+
+#landscapeModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#disclaimerModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.disclaimer-modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 35px;
+    border: 5px solid #D13A79;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.disclaimer-modal-content h2 {
+    color: #D13A79;
+    text-align: center;
+    font-weight: bold;
+}
+
+.disclaimer-modal-content p {
+    color: #8F395D;
+    text-align: justify;
+}
+
+.disclaimer-modal-content p span {
+    font-weight: bold;
+}
+
+#understandButton {
+    background-color: #CB3473;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#understandButton:hover {
+    background-color: #8F395D;
+}
+
+
+#supportModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.support-modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 2%;
+    border-radius: 35px;
+    border: 5px solid #D13A79;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.support-modal-content img {
+    display: block;
+    margin: 0 auto; 
+    width: 250px;
+    height: auto;
+}
+
+.support-modal-content .close-btn {
+    background-color: transparent;
+    color: #CB3473;
+    border: none;
+    font-size: 14px;
+    padding: 7px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    /*margin-left: 90%;*/
+}
+
+.support-modal-content .close-btn:hover {
+    background-color: #8F395D;
+}
+
+.support-modal-content .modal-header {
+    color: #D13A79;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.support-modal-content .modal-body {
+    color: #8F395D;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.support-modal-content .info h3 {
+    color: #CB3473;
+    cursor: pointer;
+    margin: 10px 0;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    padding: 6px;
+    border-radius: 5px;
+    font-style: underline;
+}
+
+.support-modal-content .info h3:hover {
+    color: #8F395D;
+    background-color: #F7D5E1; 
+}
+
+.support-modal-content .info h3.clicked {
+    background-color: #F7D5E1; 
+    font-style: none;
+}
+
+.support-modal-content .info ul {
+    list-style-type: disc;
+    margin: 10px 10px 0 0;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.support-modal-content .info ul.visible {
+    display: block;
+    opacity: 1;
+}
+
+.support-modal-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.support-modal-content::-webkit-scrollbar-track {
+    background: transparent; 
+    border-radius: 10px; 
+}
+
+.support-modal-content::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    min-height: 50px;
+}
+
+.support-modal-content::-webkit-scrollbar-thumb:hover {
+    background: #f7a7b5;
+}
+
+.support-modal-content {
+    scrollbar-color: #D3D3D3 transparent;
+    scrollbar-width: thin;
+}
+
+.support-modal-content::-webkit-scrollbar-corner {
+    background-color: transparent; 
+}
+
+body.modal-open {
+    overflow: hidden; 
+}
+
+.support-button {
+    background-color: white;
+    border: 2px solid #CB3473;
+    color: #CB3473;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: calc(100% - 40px); 
+    max-width: 1150px; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+
+.support-button i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.support-button:hover {
+    background-color: #CB3473;
+    color: white;
+    border: 2px solid #CB3473;
+}
+
+.main-content {
+    padding-bottom: 100px;
+}
+
+ul h6 {
+    font-size: 16px; 
+    margin: 10px 0;
+    margin-left: -18px;
+    color: #CB3473;
+    font-weight: bold;
+}
+
+ul h5 {
+    font-size: 16px; 
+    margin: 10px 0;
+    margin-left: -18px;
+    /*color: #CB3473;*/
+    /*font-weight: bold;*/
+}
+
+.email-text {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}

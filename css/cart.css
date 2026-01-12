@@ -1,0 +1,422 @@
+body {
+    background-color: #fff0f5; 
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.container-custom {
+    width: 70%; 
+    margin: 0 auto; 
+}
+
+.shopping-bag-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #ff87a0; 
+    font-weight: 500;
+}
+
+.product-card {
+    border: none;
+    border-bottom: 1px solid #ff87a0; 
+    padding: 15px 0;
+    margin-bottom: 15px;
+    background-color: transparent;
+    position: relative; 
+}
+
+.product-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.cake-name {
+    color: #8F395D;
+    font-weight: bold;
+}
+
+.cake-price {
+    color: #CB3473 !important;
+    font-weight: bold !important;
+    
+}
+
+.order-summary {
+    position: relative;
+    background-color: transparent; 
+    padding: 1rem;
+    border-radius: 8px; 
+    color: #333;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.order-summary h5 {
+    color: black; 
+    font-family: 'Leckerli One', cursive;
+    font-size: 2rem;
+}
+
+#subtotal {
+    font-weight: bold;
+}
+
+.order-summary p {
+    margin-bottom: 5px;
+}
+
+.order-summary .btn, .order-summary .btn:focus {
+    background-color: #CB3473; 
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-weight: 500;
+}
+
+.continue-shopping {
+    background-color: #fff0f5;
+    color: #ff87a0; 
+    border: none;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.continue-shopping:hover,
+.order-summary .btn:hover {
+    background-color: #ED72A5;
+    color: white;
+}
+
+.total-price {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.quantity-input {
+    width: 60px;
+}
+
+@media (max-width: 768px) {
+    .container-custom {
+        width: 90%; 
+    }
+}
+
+.btn-outline-danger {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.product-card {
+    border: none;
+    border-bottom: 1px solid #ff87a0; 
+    padding: 15px 0;
+    margin-bottom: 15px;
+    background-color: transparent;
+    position: relative; 
+}
+
+
+.d-flex.align-items-center.mb-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+
+.price {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px; 
+}
+
+.quantity-input {
+    width: 80px; 
+}
+
+.btn-outline-danger {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.remove {
+    font-size: 1.5rem;
+    color: #FFCDE0;
+    border: none;
+    background-color: transparent;
+    text-align: right;
+}
+
+.remove:hover {
+    color:#F16FA8;
+}
+
+
+@media (max-width: 768px) {
+    .container-custom {
+        width: 90%; 
+    }
+}
+@media (max-width: 576px) {
+    .container-custom {
+        width: 90%; 
+    }
+
+    
+    .btn-outline-danger {
+        top: 20%; 
+        padding: 4px 8px; 
+        font-size: 0.8rem; 
+
+    }
+}
+
+.product-card .form-check-input {
+   
+    padding: 10px; 
+}
+.check{
+    padding: 10px;
+}
+
+.main-content {
+    /*padding-bottom: 200px;*/
+    
+}
+  
+.continue-btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #CB3473;
+    background-color: transparent;
+    border: 2px solid #CB3473;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.continue-btn:hover {
+    background-color: #CB3473;
+    color: white;
+    border-color: #CB3473;
+}
+
+.continue-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px #CB3473;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #8F395D;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:hover {
+    border-color: #CB3473;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #CB3473;
+    border-color: #CB3473;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 10px;
+    border: solid #FFFFFF;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%) rotate(45deg);
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #CB3473;
+}
+
+
+.form-control, .form-select {
+    border: 2px solid #FF96C4;
+    border-radius: 5px;
+}
+
+.form-control:focus, 
+.form-select:focus {
+    outline: none !important;
+    box-shadow: 0 0 5px rgba(209, 58, 121, 0.5) !important;
+    border-color: #D13A79 !important;
+}
+
+.main-content {
+    margin-bottom: 100px; 
+    }
+
+
+@media (max-width: 992px) {
+    .order-summary {
+        /*position: -webkit-sticky;*/
+        /*position: sticky;*/
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: white; 
+        box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1); 
+        padding: 20px; 
+        z-index: 99; 
+        border-radius: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        transition: bottom 0.3s ease, position 0.3s ease;
+    }
+
+    
+    
+}
+
+@media (min-width: 993px) {
+  .order-summary {
+    position: relative;
+  }
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: none !important; 
+  overflow: hidden !important;
+}
+
+.modal-content {
+  background-color: white !important;
+  padding: 30px;
+  border-radius: 35px !important;
+  border: 5px solid #D13A79 !important;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 1001;
+}
+
+
+.modal-content h5 {
+    color: #D13A79;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-content h4 {
+    color: #D13A79;
+    text-align: left;
+    font-weight: bold;
+}
+
+.modal-content p {
+    margin-top: 15px;
+    color: #8F395D;
+    text-align: center;
+}
+
+.modal-content p span {
+    font-weight: bold !important;
+}
+
+#downloadImageBtn {
+  background-color: #CB3473;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 30px !important;
+  margin-right: 40px !important;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.understand-btn:hover {
+  background-color: #8F395D;
+  color: white;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #D13A79;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.close-modal:hover {
+    color: #8F395D;
+}
+
+.buttonModal {
+    appearance: none;
+}
+
+#cartButton {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.heart-container {
+    pointer-events: all; 
+}
+
+#modalImage {
+    width: 100%;
+}
+
+.custom-cake-img {
+    cursor: pointer;
+}

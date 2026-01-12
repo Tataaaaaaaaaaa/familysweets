@@ -1,0 +1,621 @@
+body {
+    background-color: #fff5f4 !important;
+}
+
+.title {
+  font-family: 'Leckerli One', cursive;
+  color: #D13A79;
+  font-size: 3.5rem !important;
+}
+
+#sort-by {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #8F395D;
+}
+
+#sort-select {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: black !important;
+    font-size: 1rem;
+
+    background-image: url('../css/designs/select-arrowhead.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
+    background-size: 12px;
+    padding-right: 100px; 
+    width: auto;
+    
+    border: 2px solid #8F395D;
+    border-radius: 11px;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+@media (max-width: 1199px) {
+    #sort-select {
+        padding-right: 75px; 
+    }
+}
+
+@media (max-width: 991px) {
+    #sort-select {
+        padding-right: 50px; 
+    }
+}
+
+@media (max-width: 575px) {
+    #sort-select {
+        padding-right: 30px; 
+    }
+}
+
+.price-filter, .star-filter {
+    background-color: white !important;
+}
+
+.price-filter select {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: black !important;
+    font-size: 1rem;
+    
+    background-image: url('../css/designs/select-arrowhead.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
+    background-size: 12px;
+    padding-right: 10px; 
+    
+    width: 100%;
+
+    border: 2px solid #8F395D;
+    border-radius: 11px;
+    transition: all 0.5s ease !important;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+#sort-select:hover, .price-filter select:hover {
+    border-color: #CB3473 !important;
+    box-shadow: 0 0 5px #CB3473;
+    cursor: pointer;
+}
+
+#sort-select:focus, .price-filter select:focus {
+    border-color: #CB3473;
+    outline: none;
+    box-shadow: 0 0 5px #CB3473;
+}
+
+#sort-select option:hover, .price-filter option:hover {
+    background-color: #FFE0EE;
+}
+
+.filter {
+    background-color: white;
+    padding: 20px;
+    border-radius: 11px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter div {
+    width: 100%;
+    background-color: rgba(255, 245, 150, 0.82);
+}
+
+.filter div h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #8F395D;
+    
+    margin: -20px -20px 15px -20px;
+    font-size: 1.2em;
+    background-color: #FFF596;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    display: block;
+}
+
+.filter-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+     display: flex;             
+    flex-direction: row;        
+    align-items: center;
+    margin-bottom: 10px;     
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #8F395D;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:hover {
+    border-color: #CB3473;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #CB3473;
+    border-color: #CB3473;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 10px;
+    border: solid #FFFFFF;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%) rotate(45deg);
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #CB3473;
+}
+
+.cake-card-container {
+    flex: 0 0 auto !important;
+    cursor: pointer !important;
+}
+
+.cake-card-4-col {
+    width: 25% !important;
+}
+
+.cake-card-3-col {
+    width: 33.33333333% !important;
+}
+
+.cake-card-2-col {
+    width: 50% !important;
+}
+
+.cake-card-1-col {
+    width: 100% !important;
+}
+
+.prod-cake-card {
+    background-color: #ffe7e7;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer !important;
+}
+
+.prod-cake-card:hover {
+    transform: scale(1.02);
+    background-color: #F6D1DD;
+}
+
+.prod-cake-name-wrapper {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+}
+
+
+.prod-cake-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(0.90rem + 1.09vw) !important;
+    color: #8F395D;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    
+    display: -webkit-box; 
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: normal; 
+}
+
+.prod-cake-price {
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(0.6rem + 1.09vw) !important;
+    color: #D13A79;
+    font-weight: bold;
+    text-align: center;
+}
+
+.star-filter i {
+    font-size: 20px;
+    margin-right: 5px;
+    /*color: #FFE073;*/
+    /*text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4),*/
+    /*    0px 0px 4px rgba(255, 224, 115, 0.8);*/
+}
+
+
+.stars i {
+    font-size: 20px;
+    margin-right: 5px;
+    /*color: #FFE073;*/
+    /*text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4),*/
+    /*    0px 0px 4px rgba(255, 224, 115, 0.8);*/
+}
+
+.bi-star {
+    color: #FCD53F;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4),
+        0px 0px 4px rgba(255, 224, 115, 0.8);
+}
+
+.bi-star-fill {
+    color: #FCD53F;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), 
+                 0px 0px 8px rgba(255, 224, 115, 0.6);
+}
+
+@media (min-width: 1200px) {
+  .prod-cake-name {
+    font-size: 1.35rem !important;
+  }
+  
+  .prod-cake-price {
+    font-size: 1.35rem !important;
+  }
+}
+
+@media (max-width: 949px) {
+  .prod-cake-price {
+    font-size: calc(1rem + 1.09vw) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .prod-cake-price {
+    font-size: calc(0.8rem + 1.09vw) !important;
+  }
+}
+
+@media (max-width: 508px) {
+  .prod-cake-price {
+    font-size: calc(0.7rem + 1.09vw) !important;
+  }
+}
+
+@media (max-width: 446px) {
+  .prod-cake-price {
+    font-size: calc(0.6rem + 1.09vw) !important;
+  }
+}
+
+@media (max-width: 406px) {
+  .prod-cake-name {
+    font-size: 1.85rem !important;
+  }
+  
+  .prod-cake-price {
+    font-size: 1.85rem !important;
+  }
+  
+  .stars i {
+    font-size: 1.85rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .prod-cake-price {
+    font-size: 1.65rem !important;
+  }
+}
+
+@media (max-width: 324px) {
+  .prod-cake-price {
+    font-size: 1.45rem !important;
+  }
+}
+
+#prod-cake-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (min-width: 1516px) {
+  .custom-mx-3{
+      margin-right: 1rem !important;
+      margin-left: 1rem !important;
+  }
+}
+
+@media (max-width: 1515px) {
+  .custom-mx-3{
+      margin-right: .9rem !important;
+      margin-left: .9rem !important;
+  }
+}
+
+@media (max-width: 1407px) {
+  .custom-mx-3{
+      margin-right: .5rem !important;
+      margin-left: .5rem !important;
+  }
+}
+
+@media (max-width: 1050px) {
+  .custom-mx-3 {
+      margin-right: 0rem !important;
+      margin-left: 0rem !important;
+  }
+}
+
+.filters {
+    background-color: white;
+    padding: 20px;
+    border-radius: 11px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filters h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #8F395D;
+    
+    margin: -20px -20px 15px -20px;
+    font-size: 1.2em;
+    background-color: #FFF596;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    display: block;
+}
+
+
+.filters label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.clickable-text {
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.clickable-text:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+.sort-by {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.cake-card {
+    background-color: #ffe7e7;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex; 
+    flex-direction: column; 
+    /*height: 450px; */
+}
+
+.cake-card:hover {
+    transform: scale(1.02);
+}
+
+.cake-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cake-card h5 {
+    color: #8F395D;
+    font-weight: bold;
+    
+    display: -webkit-box;    
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden;    
+    text-overflow: ellipsis;
+}
+
+.cake-card h4 {
+    color: #D13A79;
+    font-weight: bold;
+}
+
+.cake-card-icons {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cake-card-icons .btn-icon {
+    background-color: #ff87a0;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.3s;
+}
+
+.cake-card-icons .btn-icon:hover{
+    background-color: #CB3473;
+    color: white;
+}
+
+.cake-card-icons .btn-icon.favorite-btn.favorited {
+    background-color: #D13A79;
+    color: white;
+}
+
+ .cake-card-icons .btn-icon.cart-btn.in-cart {
+    background-color: #D13A79;
+    color: white;
+} 
+
+.main-content {
+    padding-bottom: 300px;
+    
+  }
+
+/*.price-filter select {*/
+/*    width: 100%;*/
+/*    padding: 8px;*/
+/*    font-size: 1em;*/
+/*    color: #8F395D;*/
+/*    background-color: #FFFFFF;*/
+/*    border: 2px solid #CB3473;*/
+/*    border-radius: 5px;*/
+/*    transition: all 0.3s ease;*/
+/*    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);*/
+/*    appearance: none; */
+/*}*/
+
+/*.price-filter select:hover {*/
+/*    border-color: #8F395D;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.price-filter select:focus {*/
+/*    border-color: #CB3473;*/
+/*    outline: none;*/
+/*    box-shadow: 0 0 5px #CB3473;*/
+/*}*/
+
+/*.price-filter option:hover {*/
+/*    background-color: #FFE0EE;*/
+/*}*/
+
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#noCake {
+    text-align: center;
+    color: #8F395D; 
+    font-size: 1.2em;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+#noCake i {
+    font-size: 2em;
+    color: #CB3473;
+    margin-bottom: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+#noCake p {
+    font-size: 1.1em;
+    color: #8F395D;
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    color: #D13A79;
+    border-bottom: 2px solid #D13A79;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn-close {
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+.modal-body {
+    color: #8F395D;
+}
+
+.form-label {
+    color: #8F395D;
+    font-weight: bold;
+}
+
+.form-control, .form-select {
+    border: 2px solid #FF96C4;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #D13A79 !important;
+    border: none !important;
+    font-weight: bold;
+    color: white !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #8F395D !important;
+}
+
+.form-control:focus, 
+.form-select:focus {
+    outline: none !important;
+    box-shadow: 0 0 5px rgba(209, 58, 121, 0.5) !important;
+    border-color: #D13A79 !important;
+}
+

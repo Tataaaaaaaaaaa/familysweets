@@ -1,0 +1,211 @@
+.bg-navbar {
+    background-color: #F7D5E1;
+}
+
+nav div a img {
+    max-width: 250px !important;
+}
+
+@media(max-width: 992px) {
+   nav div a img {
+      max-width: 200px !important;
+  }
+}
+
+@media(max-width: 860px) {
+   nav div a img {
+      max-width: 180px !important;
+  }
+}
+
+@media(max-width: 800px) {
+   nav div a img {
+      max-width: 150px !important;
+  }
+}
+
+nav div div ul li {
+  display: inline-flex; 
+}
+
+nav div div ul li a {
+  color: #a3446d !important;
+  font-weight: 600 !important;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  display: inline-block; 
+  padding: 5px 10px;
+  text-align: center
+}
+
+nav div div ul li a,
+nav div div ul li a:after,
+nav div div ul li a:before {
+  transition: all 0.5s;
+}
+
+nav div div ul li a:hover {
+  color: #D13A79;
+  background-color: transparent !important;
+}
+
+nav div div ul li a:after {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  content: '';
+  background: #D13A79;
+  height: 2px;
+  transition: width 0.5s ease;
+}
+
+nav div div ul li a:hover:after {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-toggler {
+   border-color: transparent; 
+   border: none !important;
+   outline: none !important;
+}
+
+.navbar-toggler img {
+  width: 30px;
+  height: auto;
+  margin-top: -20px;
+  outline: none !important;
+}
+
+.navbar-toggler img:hover {
+  opacity: 0.8;
+}
+
+.navbar-toggler:focus, 
+.navbar-toggler:active {
+  outline: none !important; 
+  box-shadow: none !important; 
+  border: none !important; 
+}
+
+.heart-container {
+  --heart-color: #8f395d;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transition: .3s;
+}
+
+.heart-container .checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.heart-container .svg-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-container .svg-outline,
+.heart-container .svg-filled {
+  fill: var(--heart-color);
+  position: absolute;
+}
+
+.heart-container .svg-filled {
+  animation: keyframes-svg-filled 1s;
+  display: none;
+}
+
+.heart-container .svg-celebrate {
+  position: absolute;
+  animation: keyframes-svg-celebrate 0.5s ease-in-out; 
+  animation-fill-mode: forwards;
+  display: none;
+  stroke: var(--heart-color);
+  fill: var(--heart-color);
+  stroke-width: 2px;
+}
+
+.heart-container:hover .svg-filled {
+  display: block;
+}
+
+.heart-container:hover .svg-celebrate {
+  display: block;
+}
+
+@keyframes keyframes-svg-filled {
+  0% {
+      transform: scale(0);
+  }
+  25% {
+      transform: scale(1.2);
+  }
+  50% {
+      transform: scale(1);
+      filter: brightness(1.5);
+  }
+}
+
+@keyframes keyframes-svg-celebrate {
+  0% {
+      transform: scale(0); 
+  }
+  50% {
+      opacity: 1;
+      transform: scale(0.5); 
+      filter: brightness(1.5);
+  }
+  100% {
+      transform: scale(0.7);
+      opacity: 0;
+  }
+}
+
+.svg-outline, .svg-filled {
+  width: 24px;
+  height: auto;
+}
+
+.svg-celebrate {
+  transform: scale(0.5); 
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-icon-bg {
+    display: flex;
+}
+
+.navbar-icon-sm, .nav-item-icon {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .navbar-icon-bg {
+        display: none;
+    }
+
+    .navbar-icon-sm {
+        display: flex;
+    }
+}
+
+@media (max-width: 400px) {
+    #favorites-icon, #shopping-bag-icon {
+      display: none;
+    }
+    
+    .nav-item-icon {
+        display: flex;
+    }
+}
